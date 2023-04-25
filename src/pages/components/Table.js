@@ -36,7 +36,7 @@ const Table = ({ query }) => {
           </tr>
         </thead>
         <tbody>
-          {query.map((user, index) => {
+          {query?.map((user, index) => {
             return (
               <tr className="text-left border-b border-opacity-20 border-gray-700">
                 <td className="px-3 py-2">

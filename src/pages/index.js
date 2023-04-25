@@ -22,8 +22,7 @@ export async function getStaticProps() {
 }
 
 const Home = ({ query1, query2, query3, query4, query5, users }) => {
-  const router = useRouter();
-  if (router.isFallback) {
+  if (!query5) {
     return (
       <div className="h-screen w-screen text-center">Fetching Data...</div>
     );
@@ -92,7 +91,7 @@ const Home = ({ query1, query2, query3, query4, query5, users }) => {
               </tr>
             </thead>
             <tbody>
-              {query5.map((city, index) => {
+              {query5?.map((city, index) => {
                 return (
                   <tr className="text-left border-b border-opacity-20 border-gray-700">
                     <td className="px-3 py-2">
