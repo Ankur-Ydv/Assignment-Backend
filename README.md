@@ -2,7 +2,7 @@
 #### Assigment assigned by "Mobilicis India Private Limited" 
 
 ## Demo
-#### https://tri2do.vercel.app/
+#### https://assignfrontend.vercel.app/
 
 ## Installation Guide
 ### clone the project
